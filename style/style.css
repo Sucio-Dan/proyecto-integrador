@@ -1,126 +1,176 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-html{
-    background-color: black;
+html {
 }
 
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
 }
 
 /*nav*/
 
-header{
+header {
+  background-color: #0e0e0e;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.logo img {
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+nav{
     display: flex;
-    justify-content: space-between;
-    height: 70px;
-    align-items: center;
-    padding: 10px;
-    border-bottom: solid 2px white;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-}
-.logo img{
-    width: 60px;
-    margin-right: 10px;
-    border-radius: 50px;
+@media (max-width: 768px) {
+   
+  }
+  
+nav a {
+  font-weight: 600;
+  padding-right: 20px;
+  padding: 5px;
 }
 
-nav a{
-    font-weight: 600;
-    padding-right: 20px;
-    padding: 5px;
+nav a:hover {
+  color: black;
+  font-size: 25px;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 20px 20px 0px 0px;
 }
-
-nav a:hover{
-color: black;
-font-size: 25px;
-transition: 1s;
-background-color: rgba(255, 255, 255, 0.185);
-border-radius: 20px 20px 0px 0px;
-}
-
 
 /*seccion ofertas*/
-.container{
-    border-radius: 0;
-    width: 100vw;
-    height: 50vh;
-    transition: 0.6s;
-    background-color:rgba(10, 10, 10, 0.904);
-    border: solid 2px white;
+.banner {
+  display: flex;
+  justify-content: end;
+  border-radius: 0;
+  width: 100vw;
+  height: 65vh;
+  background-image: url("../images/banner.webp");
+  background-position: 75% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
 
-
-
-.container2{
-    background-color: rgb(5, 42, 75);
-    margin: 20px;
-    width: 270px;
-    height: 270px;
-    border: solid white 1px;
-
+@media (max-width: 768px) {
+  .banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-         
-.banerOfertas{
-    color:white;
-    text-align: center;
-    padding-top: 100px;
 
+.bannerCard {
+  background-color: #3e5757e0;
+  transform: scaleX(-1);
+  margin: 3rem;
+  width: 320px;
+  height: 350px;
+}
+
+.bannerCard ul {
+  margin-top: 2rem;
+  list-style: none;
+  color: white;
+}
+.bannerCard li {
+  font-weight: bold;
+  font-size: x-large;
+  padding: 7px 5px;
+}
+.bannerCard li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3e5757e0;
+  transition: 0.5s ease-in-out;
+}
+
+.bannerCard .control {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerCard button {
+  background-color: white;
+  border: none;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.bannerCard button:hover {
+  background-color: rgb(172, 172, 172);
+  transition: 0.3s ease-in-out;
+}
+
+.banerOfertas {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
 }
 
 /*Categorias*/
-.seccion2{
-    text-align: center;
-    color: white;
-    margin-top:100px;
-    height: 300px;
+.category {
+  text-align: center;
+  color: black;
+  height: 300px;
 }
 
-.seccion2 h2{
-    margin-bottom: 70px;
+.category a {
+  padding: 30px;
 }
-
-
-
-.seccion2 a {
-padding: 30px;
-
-
-
-}
-
 
 /*Footer*/
 
-footer{
-border-top: dashed 1px white;
-text-align: center;
-height: 50vh;
-background-color: rgb(0, 0, 0);
-
-
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgb(0, 0, 0);
+  margin-top: 2rem;
 }
 
-footer ul li{
-margin: 20px;
+footer ul li {
+  margin: 20px;
+  display: inline;
+  color: rgb(255, 255, 255);
+}
 
-display: inline;
-color: rgb(255, 255, 255);
-
+.footer li:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  padding: 7px;
 }
