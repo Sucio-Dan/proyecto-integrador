@@ -5,8 +5,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-html {
-}
 
 body {
   font-family: sans-serif;
@@ -30,17 +28,17 @@ header {
   justify-content: space-between;
   height: 70px;
   align-items: center;
-  padding: 10px;
+  padding: 45px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 3em;
 }
 .logo img {
-  width: 60px;
+  width: 75px;
   margin-right: 10px;
   border-radius: 50px;
 }
@@ -72,15 +70,15 @@ nav a:hover {
 /*seccion ofertas*/
 .banner {
   display: flex;
-  justify-content: end;
+  /* justify-content: end; */
   border-radius: 0;
-  width: 100vw;
+  width: auto;
   height: 65vh;
-  background-image: url("../images/banner.webp");
-  background-position: 75% 25%;
+  background-image: url("../images/maxresdefault.webp");
+  background-position: 25% 45%;
   background-size: cover;
   background-repeat: no-repeat;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
 
 @media (max-width: 768px) {
@@ -92,11 +90,11 @@ nav a:hover {
 }
 
 .bannerCard {
-  background-color: #3e5757e0;
-  transform: scaleX(-1);
+  background: linear-gradient(#ea1e63, #ea1e6227) ;
+  /* transform: scaleX(-1); */
   margin: 3rem;
-  width: 320px;
-  height: 350px;
+  width: 420px;
+  height: 450px;
 }
 
 .bannerCard ul {
@@ -106,8 +104,8 @@ nav a:hover {
 }
 .bannerCard li {
   font-weight: bold;
-  font-size: x-large;
-  padding: 7px 5px;
+  font-size: 2em;
+  padding: 15px 10px;
 }
 .bannerCard li:hover {
   cursor: pointer;
@@ -127,6 +125,7 @@ nav a:hover {
   padding: 5px;
   color: black;
   font-weight: bold;
+  font-size: 1.5em;
 }
 
 .bannerCard button:hover {
