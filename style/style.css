@@ -150,7 +150,11 @@ nav a:hover {
   padding: 30px;
 }
 
-
+.title_carousel {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
 
 /*Footer*/
 
