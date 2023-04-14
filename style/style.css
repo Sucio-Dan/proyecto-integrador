@@ -28,17 +28,17 @@ header {
   justify-content: space-between;
   height: 70px;
   align-items: center;
-  padding: 45px;
+  padding: 14px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
 }
 .logo img {
-  width: 75px;
+  width: 50px;
   margin-right: 10px;
   border-radius: 50px;
 }
@@ -62,7 +62,7 @@ nav a {
 nav a:hover {
   color: black;
   font-size: 25px;
-  transition: 1s;
+  /* transition: 1s; */
   background-color: rgba(255, 255, 255, 0.185);
   border-radius: 20px 20px 0px 0px;
 }
@@ -93,18 +93,18 @@ nav a:hover {
   background: linear-gradient(#ea1e63, #ea1e6227) ;
   /* transform: scaleX(-1); */
   margin: 3rem;
-  width: 420px;
-  height: 450px;
+  width: 300px;
+  height: 325px;
 }
 
 .bannerCard ul {
-  margin-top: 2rem;
+  margin-top: 1rem;
   list-style: none;
   color: white;
 }
 .bannerCard li {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.25em;
   padding: 15px 10px;
 }
 .bannerCard li:hover {
@@ -125,7 +125,7 @@ nav a:hover {
   padding: 5px;
   color: black;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .bannerCard button:hover {
@@ -149,6 +149,8 @@ nav a:hover {
 .category a {
   padding: 30px;
 }
+
+
 
 /*Footer*/
 
